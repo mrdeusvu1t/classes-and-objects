@@ -14,6 +14,8 @@
 > 	- The second contstructor should accept 2 arguments in order to initialize a new Employee entirely
 > 
 > 4) Add 3 methods to 'Employee' class:
-> 	1. The first method should NOT be accessible from outside of the class. It should return age value in string format;
-> 	2. The second method should change employee surname with new value, which must be passed to the method;
-> 	3. The third method must return employee info in the string format: "Surname: {Employee.surname}, Age: {Employee.age}"
+>   - The first method should NOT be accessible from outside of the class. It should return age value in string format;
+> 	- The second method should change employee surname with new value, which must be passed to the method;
+> 	- The third method must return employee info in the string format: "Surname: {Employee.surname}, Age: {Employee.age}"
+
+*Topics - classes, objects.*
