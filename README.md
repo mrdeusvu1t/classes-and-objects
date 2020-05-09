@@ -1,7 +1,6 @@
 ## Task description ##
 
-> Current project contains Car.cs file. It is an example of simple class.
-> Take a look at the example and perform the following task:
+> Current project contains Car.cs file. It is an example of simple class. Take a look at the example and perform the following task:
 > 1) Create a new 'Employee' class in separate file
 > 2) Add 2 fields which contains the following information:
 > 	 - Surname
