@@ -10,9 +10,9 @@
 > 	 - Age
 >   Fields must NOT be accessible from outside of the class.
 > 
-> 3) Add 2 contstructors to 'Employee' class:
-> 	 - The firts contstructor without parameters
-> 	 - The second contstructor should accept 2 arguments in order to initialize a new Employee entirely
+> 3) Add 2 constructors to 'Employee' class:
+> 	 - The firths constructor without parameters
+> 	 - The second constructor should accept 2 arguments in order to initialize a new Employee entirely
 > 
 > 4) Add 3 methods to 'Employee' class:
 >    - The first method should NOT be accessible from outside of the class. It should return age value in string format;
