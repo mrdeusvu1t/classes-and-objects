@@ -146,7 +146,7 @@ namespace ClassesAndObjectsTask.Tests
 
         private Assembly LoadAssemblyContent()
         {
-            return Assembly.GetExecutingAssembly();
+            return Assembly.Load("ClassesAndObjectsTask");
         }
 
         private FieldInfo[] GetAllNonPublicFields(Assembly assemblyContent)
