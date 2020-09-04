@@ -3,8 +3,8 @@
 Current project contains [Car.cs](ClassesAndObjectsTask/Car.cs) file. It is an example of simple class. Take a look at the example and perform the following task:
 - Create a new `Employee` class in separate file.
 - Add 2 fields which contains the following information:
-    - `Surname`;
-    - `Age`.    
+    - `surname`;
+    - `age`.    
     Fields must NOT be accessible from outside of the class.  
 - Add two constructors to `Employee` class:
     - The firths constructor without parameters;
