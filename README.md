@@ -4,7 +4,7 @@ Current project contains [Car.cs](ClassesAndObjectsTask/Car.cs) file. It is an e
 - Create a new `Employee` class in separate file.
 - Add 2 fields which contains the following information:
     - `Surname`;
-    - `Age`.
+    - `Age`.    
     Fields must NOT be accessible from outside of the class.  
 - Add two constructors to `Employee` class:
     - The firths constructor without parameters;
