@@ -1,15 +1,17 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using NUnit.Framework;
+
+#pragma warning disable CA1707
 
 namespace ClassesAndObjectsTask.Tests
 {
     [TestFixture]
     public class EmployeeTests
     {
-        private readonly string[] fields = {"surname", "age"};
+        private readonly string[] fields = { "surname", "age" };
 
         [Test]
         public void Employee_Class_Is_Created()
@@ -29,7 +31,7 @@ namespace ClassesAndObjectsTask.Tests
             var notDefinedFields = new List<string>();
 
             var employeeFields = this.GetAllNonPublicFields(assemblyContent);
-            foreach (var field in fields)
+            foreach (var field in this.fields)
             {
                 var instanceField = employeeFields.FirstOrDefault(f => f.Name.ToLower().Contains(field));
                 if (instanceField == null)
@@ -43,20 +45,19 @@ namespace ClassesAndObjectsTask.Tests
                 notDefinedFields = null;
             }
 
-            Assert.IsNull(notDefinedFields,
-                $"Fields: {notDefinedFields?.Aggregate((previous, next) => $"'{previous}', {next}")} are not defined.");
+            Assert.IsNull(notDefinedFields, $"Fields: {notDefinedFields?.Aggregate((previous, next) => $"'{previous}', {next}")} are not defined.");
         }
 
         [Test]
-        public void Default_Contstructor_Is_Defined()
+        public void Default_Constructor_Is_Defined()
         {
             var assemblyContent = this.LoadAssemblyContent();
 
             var employeeType = assemblyContent.GetTypes()
                 .FirstOrDefault(t => t.Name.Equals("employee", StringComparison.OrdinalIgnoreCase));
-            var defaultConstructor = employeeType?.GetConstructor(new Type[] { });
+            var defaultConstructor = employeeType?.GetConstructor(Array.Empty<Type>());
 
-            Assert.IsNotNull(defaultConstructor, "Default contstructor is not defined.");
+            Assert.IsNotNull(defaultConstructor, "Default constructor is not defined.");
         }
 
         [Test]
